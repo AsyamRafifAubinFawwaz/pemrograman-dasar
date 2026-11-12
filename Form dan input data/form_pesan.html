@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input Data</title>
+  </head>
+  <style>
+    body{
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        background-color: #d0cfcf;
+        padding: 20px;
+        width: 500px;
+        height: 400px;
+        border-radius: 10px;
+    }
+  </style>
+  <body>
+    <div class="card">
+      <h2>Pemesanan makanan</h2>
+
+      <form action="proses_pesan.php" method="post">
+        <label for="nama">Nama Pesanan:</label>
+        <input type="text" id="nama" name="nama" required /><br /><br />
+        <label for="menu">Pilihan Menu:</label>
+        <select name="menu" id="menu" required>
+          <option value="">--pilih menu--</option>
+          <option value="Nasi Goreng">Nasi Goreng</option>
+          <option value="Mie Goreng">Mie Goreng</option>
+          <option value="Ayam Bakar">Ayam Bakar</option>
+        </select>
+        <br />
+
+        <label>Tingkat Pedas</label><br />
+        <input type="radio" name="pedas" value="Tidak Pedas" /> Tidak Pedas
+        <input type="radio" name="pedas" value="Sedang" /> Sedang
+        <input type="radio" name="pedas" value="Sangat Pedas" /> Sangat Pedas
+        <br /><br />
+
+        <label>Topping Tambahan:</label><br />
+        <input type="checkbox" name="topping[]" value="Telur Mata Sapi" /> Telur
+        Mata Sapi<br />
+        <input type="checkbox" name="topping[]" value="Kerupuk" /> Kerupuk<br />
+        <input type="checkbox" name="topping[]" value="Sate Usus" /> Sate
+        Usus<br /><br />
+
+        <button type="submit">Pesan Sekarang</button>
+      </form>
+    </div>
+  </body>
+</html>
