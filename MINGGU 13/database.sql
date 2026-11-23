@@ -1,0 +1,9 @@
+CREATE DATABASE kampus CHARACTER SET utf8mb4;
+USE kampus;
+ 
+CREATE TABLE mahasiswa (
+    id      INT AUTO_INCREMENT PRIMARY KEY,
+    nim     VARCHAR(12) NOT NULL UNIQUE,
+    nama    VARCHAR(50) NOT NULL,
+    jurusan VARCHAR(30) NOT NULL
+);

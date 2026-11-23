@@ -1,0 +1,3 @@
+Belajar PHP itu seru.
+File handling dimulai hari ini.
+Baris tambahan.
